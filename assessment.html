@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Take the Assessment — Next Mountain Readiness Assessment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="assessment-body">
+  <header class="site-header">
+    <a href="index.html" class="brand">Next Mountain Circles</a>
+  </header>
+
+  <main class="assessment-main">
+
+    <!-- ============ STEP 1: INTRO / EMAIL CAPTURE ============ -->
+    <section id="step-intro" class="step active">
+      <p class="kicker">Before we begin</p>
+      <h1>Tell us where to send your report.</h1>
+      <p class="step-sub">Your answers are private. Your report will be available immediately on the next screen and emailed to you for future reference.</p>
+
+      <form id="intro-form" class="intro-form" novalidate>
+        <label>
+          First name
+          <input type="text" name="firstName" required autocomplete="given-name" />
+        </label>
+        <label>
+          Last name
+          <input type="text" name="lastName" required autocomplete="family-name" />
+        </label>
+        <label class="full">
+          Email
+          <input type="email" name="email" required autocomplete="email" />
+        </label>
+        <label class="full">
+          Your role
+          <select name="role" required>
+            <option value="">Select…</option>
+            <option>CEO / President</option>
+            <option>COO / Chief of Staff</option>
+            <option>CFO</option>
+            <option>Other C-suite (CMO, CTO, CIO, CHRO, etc.)</option>
+            <option>Ministry / nonprofit executive</option>
+            <option>Founder / Owner</option>
+            <option>Senior VP / Director</option>
+            <option>Other senior leader</option>
+          </select>
+        </label>
+        <label class="full">
+          Organization size (annual revenue or budget)
+          <select name="orgSize" required>
+            <option value="">Select…</option>
+            <option>Under $1M</option>
+            <option>$1M–$5M</option>
+            <option>$5M–$25M</option>
+            <option>$25M–$100M</option>
+            <option>$100M–$500M</option>
+            <option>$500M+</option>
+            <option>Prefer not to say</option>
+          </select>
+        </label>
+        <label class="full">
+          Organization (optional)
+          <input type="text" name="organization" autocomplete="organization" />
+        </label>
+        <button type="submit" class="btn btn-primary">Begin assessment</button>
+        <p class="privacy-note">We will not share your information. See <a href="#privacy">privacy note</a>.</p>
+      </form>
+    </section>
+
+    <!-- ============ STEP 2: QUESTIONS ============ -->
+    <section id="step-questions" class="step">
+      <div class="progress">
+        <div class="progress-bar"><div id="progress-fill"></div></div>
+        <p class="progress-label"><span id="progress-current">0</span> of <span id="progress-total">24</span></p>
+      </div>
+
+      <div id="questions-container">
+        <!-- Questions rendered by assessment.js -->
+      </div>
+
+      <div class="form-actions">
+        <button id="submit-btn" type="button" class="btn btn-primary" disabled>See my results</button>
+        <p class="form-help">Answer all 24 questions to view your report.</p>
+      </div>
+    </section>
+
+    <!-- ============ STEP 3: SUBMITTING ============ -->
+    <section id="step-submitting" class="step center">
+      <p class="kicker">One moment</p>
+      <h1>Generating your report…</h1>
+      <p class="step-sub">Scoring your responses against the eight dimensions.</p>
+    </section>
+
+    <section id="privacy" class="block">
+      <h3>Privacy</h3>
+      <p class="small">We collect your name, email, role, and organization size to send you your report and follow-up reflections. We do not sell or share your information. You can request deletion at any time by emailing <a href="mailto:hello@nextmountaincircles.com">hello@nextmountaincircles.com</a>.</p>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>Next Mountain Circles — a Caliguire + Malec joint venture.</p>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/assessment.js"></script>
+</body>
+</html>

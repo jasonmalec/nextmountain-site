@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Report — Next Mountain Readiness Assessment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="results-body">
+  <header class="site-header">
+    <a href="index.html" class="brand">Next Mountain Circles</a>
+  </header>
+
+  <main class="results-main">
+    <section id="loading" class="block center">
+      <p class="kicker">Loading your report…</p>
+    </section>
+
+    <section id="report" class="report hidden">
+      <p class="kicker">Your Next Mountain Readiness Report</p>
+      <h1 id="zone-name">—</h1>
+      <p id="zone-diagnostic" class="lead">—</p>
+      <p class="report-meta">For <span id="reader-name">—</span> · Total score <span id="total-score">—</span> / 120</p>
+
+      <div class="two-col">
+        <div class="col">
+          <h2>Your strongest dimension</h2>
+          <h3 id="top-dimension">—</h3>
+          <p id="top-diagnostic">—</p>
+          <p class="callout">Keep doing this.</p>
+        </div>
+        <div class="col">
+          <h2>Your growth dimension</h2>
+          <h3 id="bottom-dimension">—</h3>
+          <p id="bottom-diagnostic">—</p>
+          <p class="callout">Start here.</p>
+        </div>
+      </div>
+
+      <section class="bars">
+        <h2>The eight dimensions</h2>
+        <div id="dimension-bars"></div>
+      </section>
+
+      <section class="reflection">
+        <h2>Three questions worth sitting with</h2>
+        <ol class="reflection-list">
+          <li>If you knew AI would reshape one third of your role in the next eighteen months, what would you stop doing today?</li>
+          <li>Who in your life would tell you the truth about whether you are leading from essence — or from anxiety?</li>
+          <li>If your team had to describe your posture toward AI in one sentence, what would they say — and is that the sentence you want?</li>
+        </ol>
+      </section>
+
+      <section class="closing">
+        <h2>The next step, if you want one</h2>
+        <p>This assessment is a snapshot, not a verdict. The leaders who do something with it tend to do it in a room of other leaders carrying the same weight.</p>
+        <p><strong>Next Mountain Circles</strong> is a 90-day cohort for ten senior leaders learning to lead wisely in the age of AI — anchored in essence, vision, and human advantage before tools. Six one-hour Circles on Zoom, one full day in person at Whisper Ranch in Boulder, Colorado. Founding cohorts begin in mid-to-late June 2026.</p>
+        <p>If this report named something true for you, the next step is a 30-minute Next Mountain Conversation with Jeff Caliguire or Jason Malec. No pitch — a focused conversation about where you are and whether this room is the right fit.</p>
+        <div class="cta-row">
+          <a href="mailto:hello@nextmountaincircles.com?subject=Next%20Mountain%20Conversation" class="btn btn-primary">Book a Next Mountain Conversation</a>
+          <a href="apply.html" class="btn btn-secondary">Apply to the Founding Cohort</a>
+        </div>
+      </section>
+
+      <section class="save-note">
+        <p class="small">Bookmark this page — your report URL is unique to you. We've also emailed a copy to <span id="email-display">your inbox</span>.</p>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Next Mountain Circles — a Caliguire + Malec joint venture.</p>
+  </footer>
+
+  <script src="js/results.js"></script>
+</body>
+</html>

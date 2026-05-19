@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply — Next Mountain Circles Founding Cohort</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">Next Mountain Circles</a>
+  </header>
+
+  <main>
+    <section class="block">
+      <p class="kicker">Founding Cohort — Application</p>
+      <h1>Apply to the founding cohort.</h1>
+      <p class="lead">Ten leaders. Six one-hour Circles on Zoom over 90 days. One full day at Whisper Ranch in Boulder. Founding price: $9,000.</p>
+      <p>The application is intentionally simple — it exists to start a conversation, not to filter you out. We will respond within three business days.</p>
+
+      <!-- Replace action with the ConvertKit form endpoint (see NMC_ConvertKit_Setup_v0.1.docx, Part 5). -->
+      <form action="https://formspree.io/f/REPLACE_ME" method="POST" class="apply-form">
+        <label>Full name <input type="text" name="name" required /></label>
+        <label>Email <input type="email" name="email" required /></label>
+        <label>Role / title <input type="text" name="role" required /></label>
+        <label>Organization <input type="text" name="organization" required /></label>
+        <label>Organization size
+          <select name="orgSize" required>
+            <option value="">Select…</option>
+            <option>Under $1M</option>
+            <option>$1M–$5M</option>
+            <option>$5M–$25M</option>
+            <option>$25M–$100M</option>
+            <option>$100M–$500M</option>
+            <option>$500M+</option>
+          </select>
+        </label>
+        <label>What's the mountain you're actually facing right now?
+          <textarea name="mountain" rows="4" required></textarea>
+        </label>
+        <label>Why this room, why now?
+          <textarea name="why" rows="4" required></textarea>
+        </label>
+        <label>Anything else we should know? (optional)
+          <textarea name="other" rows="3"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Submit application</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Next Mountain Circles — a Caliguire + Malec joint venture.</p>
+  </footer>
+</body>
+</html>
