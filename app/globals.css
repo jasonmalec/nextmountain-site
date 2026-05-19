@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 35% 97%;
+    --foreground: 0 0% 10%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+    --primary: 211 31% 17%;
+    --primary-foreground: 36 35% 97%;
+    --secondary: 36 25% 92%;
+    --secondary-foreground: 211 31% 17%;
+    --muted: 36 20% 90%;
+    --muted-foreground: 33 5% 53%;
+    --accent: 14 51% 48%;
+    --accent-foreground: 36 35% 97%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 36 35% 97%;
+    --border: 33 18% 85%;
+    --input: 33 18% 85%;
+    --ring: 211 31% 17%;
+    --radius: 0.25rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer utilities {
+  .container-wide {
+    @apply max-w-6xl mx-auto px-6;
+  }
+  .container-prose {
+    @apply max-w-3xl mx-auto px-6;
+  }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: marquee 40s linear infinite;
+}
